@@ -1,0 +1,24 @@
+.searchBar {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: -1.5rem;
+}
+input {
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 40%;
+}
+button {
+  background-color: var(--purple-300);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 0.875rem !important;
+  padding: 1rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}

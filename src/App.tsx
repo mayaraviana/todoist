@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Header } from "./components/Header";
+import { SearchBar } from "./components/SearchBar";
 
 import "./global.css";
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div>
       <Header />
+      <SearchBar />
       <button onClick={consoleLogTaks}>Console Log taks</button>
     </div>
   );
