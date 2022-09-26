@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { Header } from "./components/Header";
+
+import "./global.css";
 
 function App() {
   function consoleLogTaks() {
@@ -8,12 +11,12 @@ function App() {
   const [tasks, setTask] = useState([
     {
       id: uuidv4(),
-      name: "Essa é uma tarefa teste",
+      title: "Essa é uma tarefa teste",
     },
   ]);
   return (
     <div>
-      <h1>Todo List</h1>
+      <Header />
       <button onClick={consoleLogTaks}>Console Log taks</button>
     </div>
   );
