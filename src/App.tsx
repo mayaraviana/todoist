@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { SearchBar } from "./components/SearchBar";
 
 import "./global.css";
+import { TaksList } from "./components/TasksList";
 
 function App() {
   function consoleLogTaks() {
@@ -19,6 +20,7 @@ function App() {
     <div>
       <Header />
       <SearchBar />
+      <TaksList />
       <button onClick={consoleLogTaks}>Console Log taks</button>
     </div>
   );
