@@ -4,14 +4,14 @@
   justify-content: center;
   margin-top: -1.5rem;
 }
-input {
+.searchBar input {
   background-color: var(--gray-100);
   border: 1px solid var(--gray-200);
   border-radius: 8px;
   padding: 1rem;
   width: 40%;
 }
-button {
+.searchBar button {
   background-color: var(--purple-300);
   border: none;
   border-radius: 8px;
