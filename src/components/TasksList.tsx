@@ -1,5 +1,5 @@
 import styles from "./TasksList.module.css";
-import { Clipboard } from "phosphor-react";
+import { Clipboard, Trash } from "phosphor-react";
 
 export function TaksList() {
   return (
@@ -18,6 +18,23 @@ export function TaksList() {
           Você ainda não tem tarefas cadastradas
         </p>
         <p>Crie tarefas e organize seus itens a fazer</p>
+        <div className={styles.task}>
+          <input
+            type="checkbox"
+            name="checkboxid"
+            id=""
+            className={styles.checkbox}
+          />
+          <p className={styles.taskTitle}>
+            Essa é uma tarefa exemploEssa é uma tarefa exemploEssa é uma tarefa
+            exemploEssa é uma tarefa exemploEssa é uma tarefa exemploEssa é uma
+            tarefa exemploEssa é uma tarefa exemploEssa é uma tarefa exemploEssa
+            é uma tarefa exemplo
+          </p>
+          <button>
+            <Trash size={20} />
+          </button>
+        </div>
       </div>
     </div>
   );

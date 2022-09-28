@@ -20,7 +20,7 @@
 }
 
 .tasksIsEmpty {
-  border-top: 1px solid var(--gray-400);
+  border-top: 1px solid var(--gray-200);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -33,4 +33,35 @@
 .tasksEmptyFirstParagraph {
   font-weight: 700;
   margin-top: 1rem;
+}
+.task {
+  display: flex;
+  gap: 0.87rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  width: 100%;
+  align-items: flex-start;
+}
+.task input {
+  flex: 1;
+  width: 1.25rem;
+}
+.taskTitle {
+  flex: 12;
+}
+.task button {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.task button:hover {
+  color: var(--red-500);
 }
